@@ -1,1 +1,1 @@
-require('./fam.scss');
+require('./scss/_all.scss');
