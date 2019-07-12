@@ -8,3 +8,24 @@
     max-height: none;
   }
 }
+
+.file.is-boxed.has-name.is-custom {
+  .file-icon {
+    margin: 0 auto;
+    .fa {
+      font-size: 3em;
+      color: $blue;
+    }
+  }
+  .file-cta {
+    padding: 1em 1em;
+    background-color: $white;
+    .columns {
+      width: 100%;
+    }
+
+    &.is-dropping {
+      background-color: $gray-light;
+    }
+  }
+}
