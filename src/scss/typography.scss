@@ -1,0 +1,14 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+$family-sans-serif: 'Rubik', sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+$family-primary: $family-sans-serif;
+$family-secondary: $family-sans-serif;
+$family-code: $family-monospace;
+
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;

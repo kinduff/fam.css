@@ -1,0 +1,42 @@
+$control-radius: $radius;
+$control-radius-small: $radius-small;
+
+$control-border-width: 1px;
+
+$control-height: 2.25em;
+$control-line-height: 1.5;
+
+$control-padding-vertical: calc(0.375em - #{$control-border-width});
+$control-padding-horizontal: calc(0.625em - #{$control-border-width});
+
+$input-color: $grey-darker;
+$input-background-color: $white;
+$input-border-color: $grey;
+$input-height: $control-height;
+$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-placeholder-color: rgba($input-color, 0.3);
+
+$input-hover-color: $grey-darker;
+$input-hover-border-color: $grey-light;
+
+$input-focus-color: $grey-darker;
+$input-focus-border-color: $link;
+$input-focus-box-shadow-size: 0 0 0 0.125em;
+$input-focus-box-shadow-color: rgba($link, 0.25);
+
+$input-disabled-color: $text-light;
+$input-disabled-background-color: $background;
+$input-disabled-border-color: $background;
+$input-disabled-placeholder-color: rgba($input-disabled-color, 0.3);
+
+$input-arrow: $link;
+
+$input-icon-color: $grey-lighter;
+$input-icon-active-color: $grey;
+
+$input-radius: $radius;
+
+$label-color: $grey-dark;
+$label-weight: $weight-normal;
+
+$help-size: $size-small;
