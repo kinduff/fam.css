@@ -18,17 +18,17 @@ $white:        hsl(0, 0%, 100%);
 
 $purple:       hsl(271, 100%, 71%);
 
-$red:          #FF5025;
-$orange:       #FFB565;
-$yellow:       #FFCF54;
-$green-mint:   #0BD594;
-$green:        #00B43B;
-$blue-light:   #70DED1;
-$blue:         #00ADFB;
-$blue-dark:    #496D90;
-$gray-dark:    #363636;
-$gray-light:   #F5F5F7;
-$gray:         #A7A7A7;
+$red:          hsl(12, 100%, 57%);
+$orange:       hsl(31, 100%, 70%);
+$yellow:       hsl(43, 100%, 66%);
+$green-mint:   hsl(161, 90%, 44%);
+$green:        hsl(140, 100%, 35%);
+$blue-light:   hsl(173, 63%, 65%);
+$blue:         hsl(199, 100%, 49%);
+$blue-dark:    hsl(210, 33%, 43%);
+$gray-dark:    hsl(0, 0%, 21%);
+$gray-light:   hsl(240, 11%, 96%);
+$gray:         hsl(0, 0%, 65%);
 
 // Colors
 $primary: $green-mint;
