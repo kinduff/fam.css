@@ -54,5 +54,9 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html'
     })
-  ]
+  ],
+  devServer: {
+    port: '8080',
+    disableHostCheck: true
+  },
 };

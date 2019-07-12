@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "bulma": "^0.7.5",
+    "bulma-o-steps": "https://github.com/octoshrimpy/bulma-o-steps.git",
     "css-loader": "^3.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^4.0.0",

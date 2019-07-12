@@ -1,0 +1,52 @@
+$steps-completed-color: #71DED0;
+$steps-active-color: #71DED0;
+$steps-marker-size: 3;
+@import "bulma-o-steps/index.sass";
+.steps:not(.is-hollow) .steps-segment.is-active ~ .steps-segment .steps-marker:not(.is-hollow) {
+  box-shadow: none;
+}
+
+.steps {
+  .steps-segment {
+    padding-bottom: 4rem;
+    @include from($tablet) {
+      padding-bottom: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .steps-marker {
+      overflow: unset;
+      &::after {
+        content: ' ';
+        position: absolute;
+        border-radius: $radius-rounded;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background-color: inherit;
+        opacity: 0.5;
+      }
+      + .steps-content {
+        padding-top: calc(1.5rem - 0.9em);
+        padding-left: 2.5rem;
+        @include from($tablet) {
+          margin-top: 4rem;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+          padding-top: 0.2em;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  &.is-expired {
+    .steps-segment:after {
+      background-color: $danger;
+    }
+    .steps-marker {
+
+    }
+  }
+}

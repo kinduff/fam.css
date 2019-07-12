@@ -628,7 +628,13 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma@^0.7.5:
+"bulma-o-steps@https://github.com/octoshrimpy/bulma-o-steps.git":
+  version "1.0.9"
+  resolved "https://github.com/octoshrimpy/bulma-o-steps.git#cfccbb62d97514ef1360931ad1556a503b2a4b79"
+  dependencies:
+    bulma "^0.7.1"
+
+bulma@^0.7.1, bulma@^0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
   integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
