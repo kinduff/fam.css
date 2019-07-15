@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAM.css</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d10165363b.js"></script>
   </head>
   <body>
     <section class="section">
@@ -638,7 +638,7 @@
                   <input class="file-input" type="file" name="resume">
                   <span class="file-cta">
                     <span class="file-icon">
-                      <i class="fa fa-cloud-upload"></i>
+                      <i class="fas fa-cloud-upload-alt"></i>
                     </span>
                     <span class="file-label">
                       Warning file…
@@ -654,7 +654,7 @@
                   <input class="file-input" type="file" name="resume">
                   <span class="file-cta">
                     <span class="file-icon">
-                      <i class="fa fa-cloud-upload"></i>
+                      <i class="fas fa-cloud-upload-alt"></i>
                     </span>
                     <span class="file-label">
                       Danger file…
@@ -677,7 +677,7 @@
                       <div class="columns is-vcentered">
                         <div class="column">
                           <span class="file-icon">
-                            <i class="fa fa-cloud-upload"></i>
+                            <i class="fas fa-cloud-upload-alt"></i>
                           </span>
                         </div>
                         <div class="column is-three-fifths">
@@ -692,9 +692,6 @@
                   </label>
                 </div>
               </div>
-              <p class="help is-danger">
-                This field is required
-              </p>
             </div>
 
             <div class="field">
@@ -707,7 +704,7 @@
                       <div class="columns is-vcentered">
                         <div class="column">
                           <span class="file-icon">
-                            <i class="fa fa-cloud-upload"></i>
+                            <i class="fas fa-cloud-upload-alt"></i>
                           </span>
                         </div>
                         <div class="column is-three-fifths">
@@ -722,9 +719,6 @@
                   </label>
                 </div>
               </div>
-              <p class="help is-danger">
-                This field is required
-              </p>
             </div>
 
             <div class="field">
@@ -732,19 +726,55 @@
               <div class="control">
                 <div class="file has-name is-boxed is-fullwidth is-custom">
                   <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta is-dropping">
+                    <input class="file-input" type="file" name="resume" disabled>
+                    <span class="file-cta">
                       <div class="columns is-vcentered">
-                        <div class="column">
+                        <div class="column is-narrow">
                           <span class="file-icon">
-                            <i class="fa fa-cloud-upload"></i>
+                            <i class="fas fa-cloud-upload-alt"></i>
                           </span>
                         </div>
-                        <div class="column is-three-fifths">
-                          <span class="file-label has-text-centered">
-                            Arrastra tus archivos aquí<br />
-                            o<br />
-                            busca en tu computadora
+                        <div class="column">
+                          <div class="p-l-sm">
+                            <p><b>Prueba Final.sketch</b></p>
+                            <p>176 KB</p>
+                          </div>
+                        </div>
+                        <div class="column has-text-right">
+                          <span class="icon is-large has-text-info">
+                            <i class="fas fa-spinner fa-pulse fa-3x"></i>
+                          </span>
+                        </div>
+                      </div>
+                      <progress class="progress is-custom is-small" value="90" max="100">90%</progress>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="label">File uploaded</div>
+              <div class="control">
+                <div class="file has-name is-boxed is-fullwidth is-custom">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume" disabled>
+                    <span class="file-cta">
+                      <div class="columns is-vcentered">
+                        <div class="column is-narrow">
+                          <span class="file-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                          </span>
+                        </div>
+                        <div class="column">
+                          <div class="p-l-sm">
+                            <p><b>Prueba Final.sketch</b></p>
+                            <p>176 KB</p>
+                          </div>
+                        </div>
+                        <div class="column has-text-right">
+                          <span class="icon is-large has-text-primary">
+                            <i class="fas fa-check-circle fa-3x"></i>
                           </span>
                         </div>
                       </div>
@@ -752,9 +782,6 @@
                   </label>
                 </div>
               </div>
-              <p class="help is-danger">
-                This field is required
-              </p>
             </div>
           </div>
           <div class="column">
@@ -1065,6 +1092,100 @@
             </div>
           </li>
         </ul>
+      </section>
+
+      <section class="section" id="progress">
+        <h1 class="title">Progress</h1>
+        <hr>
+        <progress class="progress is-custom" value="90" max="100">90%</progress>
+        <progress class="progress is-primary" value="15" max="100">15%</progress>
+        <progress class="progress is-link" value="30" max="100">30%</progress>
+        <progress class="progress is-info" value="45" max="100">45%</progress>
+        <progress class="progress is-success" value="60" max="100">60%</progress>
+        <progress class="progress is-warning" value="75" max="100">75%</progress>
+        <progress class="progress is-danger" value="90" max="100">90%</progress>
+      </section>
+
+      <section class="section" id="icons">
+        <h1 class="title">Icons</h1>
+        <hr>
+        <div class="columns is-multiline">
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded is-primary">
+              <span class="check"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded is-warning">
+              <span class="exclamation"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="code"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="download"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="folder"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="image"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="pdf"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="rar"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="sketch"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="upload"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="user"></span>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="custom-icon is-rounded">
+              <span class="zip"></span>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>

@@ -1,0 +1,42 @@
+$progress-bar-background-color: $border;
+$progress-value-background-color: $link;
+$progress-border-radius: $radius-rounded;
+
+$progress-indeterminate-duration: 1.5s;
+
+.progress.is-custom {
+  &.is-small {
+    height: 0.4rem;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: $progress-bar-background-color
+  }
+  &::-webkit-progress-value {
+    background: linear-gradient(270deg, #FF9030 0%, #B620E0 95.64%);
+  }
+  &::-moz-progress-bar {
+    background: linear-gradient(270deg, #FF9030 0%, #B620E0 95.64%);
+  }
+  &::-ms-fill {
+    background: linear-gradient(270deg, #FF9030 0%, #B620E0 95.64%);
+    border: none;
+  }
+  &:indeterminate {
+    animation-duration: $progress-indeterminate-duration;
+    animation-iteration-count: infinite;
+    animation-name: moveIndeterminate;
+    animation-timing-function: linear;
+    background-color: $progress-bar-background-color;
+    background-image: linear-gradient(to right, #B620E0 30%, $progress-bar-background-color 30%);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    &::-webkit-progress-bar {
+      background-color: transparent;
+    }
+    &::-moz-progress-bar {
+      background-color: transparent;
+    }
+  }
+}
