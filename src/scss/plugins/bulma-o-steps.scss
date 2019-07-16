@@ -17,7 +17,7 @@ $steps-marker-size: 3;
     }
     .steps-marker {
       overflow: unset;
-      &::after {
+      &::before {
         content: ' ';
         position: absolute;
         border-radius: $radius-rounded;
@@ -39,14 +39,19 @@ $steps-marker-size: 3;
           padding-left: 0;
         }
       }
+      .custom-icon {
+        z-index: 1;
+      }
     }
   }
-  &.is-expired {
-    .steps-segment:after {
-      background-color: $danger;
-    }
-    .steps-marker {
-
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      .steps-segment {
+        &:after {
+          background-color: $color;
+        }
+      }
     }
   }
 }

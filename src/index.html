@@ -676,9 +676,9 @@
                     <span class="file-cta">
                       <div class="columns is-vcentered">
                         <div class="column">
-                          <span class="file-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                          </span>
+                          <div class="custom-icon is-large">
+                            <span class="upload"></span>
+                          </div>
                         </div>
                         <div class="column is-three-fifths">
                           <span class="file-label has-text-centered">
@@ -703,9 +703,9 @@
                     <span class="file-cta is-dropping">
                       <div class="columns is-vcentered">
                         <div class="column">
-                          <span class="file-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                          </span>
+                          <div class="custom-icon is-large">
+                            <span class="upload"></span>
+                          </div>
                         </div>
                         <div class="column is-three-fifths">
                           <span class="file-label has-text-centered">
@@ -730,9 +730,9 @@
                     <span class="file-cta">
                       <div class="columns is-vcentered">
                         <div class="column is-narrow">
-                          <span class="file-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                          </span>
+                          <div class="custom-icon is-large">
+                            <span class="upload"></span>
+                          </div>
                         </div>
                         <div class="column">
                           <div class="p-l-sm">
@@ -741,9 +741,9 @@
                           </div>
                         </div>
                         <div class="column has-text-right">
-                          <span class="icon is-large has-text-info">
-                            <i class="fas fa-spinner fa-pulse fa-3x"></i>
-                          </span>
+                          <div class="custom-icon is-large">
+                            <span class="loader"></span>
+                          </div>
                         </div>
                       </div>
                       <progress class="progress is-custom is-small" value="90" max="100">90%</progress>
@@ -762,9 +762,9 @@
                     <span class="file-cta">
                       <div class="columns is-vcentered">
                         <div class="column is-narrow">
-                          <span class="file-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                          </span>
+                          <div class="custom-icon is-large">
+                            <span class="upload"></span>
+                          </div>
                         </div>
                         <div class="column">
                           <div class="p-l-sm">
@@ -773,9 +773,9 @@
                           </div>
                         </div>
                         <div class="column has-text-right">
-                          <span class="icon is-large has-text-primary">
-                            <i class="fas fa-check-circle fa-3x"></i>
-                          </span>
+                          <div class="custom-icon is-primary is-large is-rounded">
+                            <span class="check"></span>
+                          </div>
                         </div>
                       </div>
                     </span>
@@ -1013,7 +1013,11 @@
         <h4 class="subtitle">Step 1</h4>
         <ul class="steps has-content-centered">
           <li class="steps-segment is-active">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 1</p>
             </div>
@@ -1034,13 +1038,21 @@
         <h4 class="subtitle">Step 2</h4>
         <ul class="steps has-content-centered">
           <li class="steps-segment">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 1</p>
             </div>
           </li>
           <li class="steps-segment is-active">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 2</p>
             </div>
@@ -1055,39 +1067,63 @@
         <h4 class="subtitle">Step 3</h4>
         <ul class="steps has-content-centered">
           <li class="steps-segment">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 1</p>
             </div>
           </li>
           <li class="steps-segment">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 2</p>
             </div>
           </li>
           <li class="steps-segment is-active">
-            <span class="steps-marker"></span>
+            <span class="steps-marker">
+              <div class="custom-icon">
+                <span class="check"></span>
+              </div>
+            </span>
             <div class="steps-content">
               <p class="is-size-5">Step 3</p>
             </div>
           </li>
         </ul>
         <h4 class="subtitle">Expired</h4>
-        <ul class="steps has-content-centered is-expired">
+        <ul class="steps has-content-centered is-warning">
           <li class="steps-segment">
-            <span class="steps-marker is-danger"></span>
+            <span class="steps-marker is-warning">
+              <div class="custom-icon">
+                <span class="exclamation"></span>
+              </div>
+            </span>
             <div class="steps-content">
             </div>
           </li>
           <li class="steps-segment">
-            <span class="steps-marker is-danger"></span>
+            <span class="steps-marker is-warning">
+              <div class="custom-icon">
+                <span class="exclamation"></span>
+              </div>
+            </span>
             <div class="steps-content">
-              <p class="is-size-5">Expired</p>
+              <p class="is-size-5">Expirado</p>
             </div>
           </li>
           <li class="steps-segment">
-            <span class="steps-marker is-danger"></span>
+            <span class="steps-marker is-warning">
+              <div class="custom-icon">
+                <span class="exclamation"></span>
+              </div>
+            </span>
             <div class="steps-content">
             </div>
           </li>
@@ -1111,77 +1147,77 @@
         <hr>
         <div class="columns is-multiline">
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="edit"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded is-primary">
+            <div class="custom-icon is-large is-rounded is-primary">
               <span class="check"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded is-warning">
+            <div class="custom-icon is-large is-rounded is-warning">
               <span class="exclamation"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="code"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="download"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="edit"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="folder"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="image"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="loader"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="pdf"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="rar"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="sketch"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="upload"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="user"></span>
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="custom-icon is-rounded">
+            <div class="custom-icon is-large is-rounded">
               <span class="zip"></span>
             </div>
           </div>
