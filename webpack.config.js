@@ -49,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].bundle.css'
+      filename: 'css/fam.css'
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
