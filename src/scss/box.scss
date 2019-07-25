@@ -1,0 +1,74 @@
+.has-color-border {
+  position: relative;
+  &::before {
+    content: ' ';
+    width: 5px;
+    height: 85%;
+    background-color: #F57D20;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+  }
+  &.color-E02020 {
+    &::before {
+      background-color: #E02020;
+    }
+  }
+  &.color-4DD400 {
+    &::before {
+      background-color: #4DD400;
+    }
+  }
+  &.color-0091FF {
+    &::before {
+      background-color: #0091FF;
+    }
+  }
+  &.color-9ABAEE {
+    &::before {
+      background-color: #9ABAEE;
+    }
+  }
+  &.color-FA6400 {
+    &::before {
+      background-color: #FA6400;
+    }
+  }
+  &.color-44D7B6 {
+    &::before {
+      background-color: #44D7B6;
+    }
+  }
+  &.color-B620E0 {
+    &::before {
+      background-color: #B620E0;
+    }
+  }
+  &.color-00B62A {
+    &::before {
+      background-color: #00B62A;
+    }
+  }
+  &.color-F7B500 {
+    &::before {
+      background-color: #F7B500;
+    }
+  }
+  &.color-32C5FF {
+    &::before {
+      background-color: #32C5FF;
+    }
+  }
+  &.color-D2109D {
+    &::before {
+      background-color: #D2109D;
+    }
+  }
+  &.color-6236FF {
+    &::before {
+      background-color: #6236FF;
+    }
+  }
+}
