@@ -2,73 +2,73 @@
   position: relative;
   &::before {
     content: ' ';
-    width: 5px;
+    width: 3px;
     height: 85%;
-    background-color: #F57D20;
+    background-color: $grey;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
   }
-  &.color-E02020 {
+  &.color-e02020 {
     &::before {
-      background-color: #E02020;
+      background-color: #e02020;
     }
   }
-  &.color-4DD400 {
+  &.color-4dd400 {
     &::before {
-      background-color: #4DD400;
+      background-color: #4dd400;
     }
   }
-  &.color-0091FF {
+  &.color-0091ff {
     &::before {
-      background-color: #0091FF;
+      background-color: #0091ff;
     }
   }
-  &.color-9ABAEE {
+  &.color-9abaee {
     &::before {
-      background-color: #9ABAEE;
+      background-color: #9abaee;
     }
   }
-  &.color-FA6400 {
+  &.color-fa6400 {
     &::before {
-      background-color: #FA6400;
+      background-color: #fa6400;
     }
   }
-  &.color-44D7B6 {
+  &.color-44d7b6 {
     &::before {
-      background-color: #44D7B6;
+      background-color: #44d7b6;
     }
   }
-  &.color-B620E0 {
+  &.color-b620e0 {
     &::before {
-      background-color: #B620E0;
+      background-color: #b620e0;
     }
   }
-  &.color-00B62A {
+  &.color-00b62a {
     &::before {
-      background-color: #00B62A;
+      background-color: #00b62a;
     }
   }
-  &.color-F7B500 {
+  &.color-f7b500 {
     &::before {
-      background-color: #F7B500;
+      background-color: #f7b500;
     }
   }
-  &.color-32C5FF {
+  &.color-32c5ff {
     &::before {
-      background-color: #32C5FF;
+      background-color: #32c5ff;
     }
   }
-  &.color-D2109D {
+  &.color-d2109d {
     &::before {
-      background-color: #D2109D;
+      background-color: #d2109d;
     }
   }
-  &.color-6236FF {
+  &.color-6236ff {
     &::before {
-      background-color: #6236FF;
+      background-color: #6236ff;
     }
   }
 }
