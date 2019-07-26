@@ -1,3 +1,15 @@
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+$approved_colors: "#e02020" "#4dd400" "#0091ff" "#9abaee" "#fa6400" "#44d7b6" "#b620e0" "#00b62a" "#f7b500" "#32c5ff" "#d2109d" "#6236ff" "#32c5ff" "#9f1bc4" "#6236ff" "#0091ff" "#f7b500" "#6dd400" ;
+
 .has-color-border {
   position: relative;
   &::before {
@@ -11,64 +23,11 @@
     transform: translateY(-50%);
     border-radius: 5px;
   }
-  &.color-e02020 {
-    &::before {
-      background-color: #e02020;
-    }
-  }
-  &.color-4dd400 {
-    &::before {
-      background-color: #4dd400;
-    }
-  }
-  &.color-0091ff {
-    &::before {
-      background-color: #0091ff;
-    }
-  }
-  &.color-9abaee {
-    &::before {
-      background-color: #9abaee;
-    }
-  }
-  &.color-fa6400 {
-    &::before {
-      background-color: #fa6400;
-    }
-  }
-  &.color-44d7b6 {
-    &::before {
-      background-color: #44d7b6;
-    }
-  }
-  &.color-b620e0 {
-    &::before {
-      background-color: #b620e0;
-    }
-  }
-  &.color-00b62a {
-    &::before {
-      background-color: #00b62a;
-    }
-  }
-  &.color-f7b500 {
-    &::before {
-      background-color: #f7b500;
-    }
-  }
-  &.color-32c5ff {
-    &::before {
-      background-color: #32c5ff;
-    }
-  }
-  &.color-d2109d {
-    &::before {
-      background-color: #d2109d;
-    }
-  }
-  &.color-6236ff {
-    &::before {
-      background-color: #6236ff;
+  @each $color in $approved_colors {
+    &.color-#{str-replace($color, '#', '')} {
+      &::before {
+        background-color: #{$color};
+      }
     }
   }
 }
