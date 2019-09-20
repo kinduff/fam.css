@@ -8,7 +8,44 @@ $steps-marker-size: 3;
 
 .steps {
   .steps-segment {
+    &.is-active ~ .steps-segment {
+      .steps-marker {
+        + .steps-content {
+          color: $steps-default-color;
+        }
+      }
+    }
+  }
+  &.has-labels {
+    .steps-segment {
+      &.is-active ~ .steps-segment {
+        .steps-marker {
+          + .steps-content {
+            > p:first-of-type {
+              color: $steps-default-color;
+            }
+          }
+        }
+      }
+      .steps-marker {
+        + .steps-content {
+          border-radius: 6px;
+          box-shadow: 0 2px 3px rgba(51, 51, 51, 0.1), 0 0 0 1px rgba(51, 51, 51, 0.1);
+          @include from($tablet) {
+            padding: 10px;
+            margin-top: 4.7rem;
+            display: inline-block;
+          }
+          > p:first-of-type {
+            color: $steps-completed-color;
+          }
+        }
+      }
+    }
+  }
+  .steps-segment {
     padding-bottom: 4rem;
+
     @include from($tablet) {
       padding-bottom: 0;
     }
@@ -30,11 +67,15 @@ $steps-marker-size: 3;
       }
       + .steps-content {
         padding-top: calc(1.5rem - 0.9em);
-        padding-left: 2.5rem;
+        margin-left: 5rem;
+        padding: 10px;
+        text-align: center;
         @include from($tablet) {
+          text-align: center;
           margin-top: 4rem;
           margin-left: 0.5em;
           margin-right: 0.5em;
+          padding: 0;
           padding-top: 0.2em;
           padding-left: 0;
         }
