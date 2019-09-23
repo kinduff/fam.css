@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "author": "",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "build": "webpack --mode production",
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js"
